@@ -26,7 +26,7 @@ device_tracker_template:
     source_type: bluetooth_le
 
   - name: Fake GPS Presence
-    location: "{{ 'Near Home' if states('binary_sensor.some_binary_sensor') else False }}"  # Near Home or not_home
+    location: "{{ 'Near Home' if is_state('binary_sensor.some_binary_sensor', 'on') else False }}"  # Near Home or not_home
     source_type: gps
 ```
 
