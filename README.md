@@ -29,3 +29,22 @@ device_tracker_template:
     location: "{{ 'Near Home' if states('binary_sensor.some_binary_sensor') else False }}"  # Near Home or not_home
     source_type: gps
 ```
+
+## Installation
+
+**Recommended method:** [HACS](https://hacs.xyz/)
+
+* Install and configure [HACS](https://hacs.xyz/docs/use/#getting-started-with-hacs)
+* Open HACS > Three dots in the upper right corner > Custom Repositories
+* Add the `dext0r/ha-template-device-tracker` repository (type `Integration`)
+* Search for and open `Device Tracker Template` > Download
+* Reboot Home Assistant
+
+[![HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=dext0r&repository=ha-template-device-tracker&category=Integration)
+
+**Manual method:**
+
+* Download `device_tracker_template.zip` archive from [latest release](https://github.com/dext0r/ha-template-device-tracker/releases/latest)
+* Create a subdirectory `custom_components/device_tracker_template` in the directory where the `configuration.yaml` file is located
+* Extract the contents of the archive to `custom_components/device_tracker_template`
+* Reboot Home Assistant
