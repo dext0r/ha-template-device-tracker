@@ -6,7 +6,6 @@ from . import DOMAIN
 
 
 class DeviceTrackerTemplateConfigFlow(ConfigFlow, domain=DOMAIN):
-
     VERSION = 1
 
     async def async_step_import(self, import_data: dict[str, Any]) -> ConfigFlowResult:

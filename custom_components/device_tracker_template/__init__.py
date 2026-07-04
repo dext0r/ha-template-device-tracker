@@ -23,8 +23,8 @@ CONFIG_SCHEMA = vol.Schema(
                 vol.Optional(CONF_ICON): cv.template,
                 vol.Optional(CONF_PICTURE): cv.template,
                 vol.Optional(CONF_ATTRIBUTES): vol.Schema({cv.string: cv.template}),
-            }
-        ]
+            },
+        ],
     },
     extra=vol.ALLOW_EXTRA,
 )

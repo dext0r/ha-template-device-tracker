@@ -20,7 +20,7 @@ async def async_setup_entry(hass: HomeAssistant, _: ConfigEntry, async_add_entit
 class DeviceTrackerTemplateEntity(TemplateEntity):
     _attr_should_poll = False
 
-    def __init__(self, hass: HomeAssistant, config: ConfigType):
+    def __init__(self, hass: HomeAssistant, config: ConfigType) -> None:
         super().__init__(
             hass,
             config=config,
@@ -37,7 +37,11 @@ class DeviceTrackerTemplateEntity(TemplateEntity):
 
         assert self._template is not None
         self.add_template_attribute(
-            "_attr_state", self._template, None, self._update_state, none_on_template_error=True
+            "_attr_state",
+            self._template,
+            None,
+            self._update_state,
+            none_on_template_error=True,
         )
 
         if self._source_type_template:
