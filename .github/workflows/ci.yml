@@ -36,7 +36,7 @@ jobs:
         run: uv run mypy .
 
   validate:
-    name: Validate for HACS
+    name: Validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -46,3 +46,6 @@ jobs:
         with:
           category: integration
           ignore: brands
+
+      - name: hassfest validation
+        uses: home-assistant/actions/hassfest@master

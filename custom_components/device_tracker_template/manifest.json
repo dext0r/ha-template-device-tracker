@@ -1,11 +1,11 @@
 {
   "domain": "device_tracker_template",
   "name": "Device Tracker Template",
+  "codeowners": ["@dext0r"],
+  "dependencies": ["template"],
   "documentation": "https://github.com/dext0r/ha-template-device-tracker",
+  "iot_class": "calculated",
   "issue_tracker": "https://github.com/dext0r/ha-template-device-tracker",
   "requirements": [],
-  "iot_class": "calculated",
-  "dependencies": ["template"],
-  "codeowners": ["@dext0r"],
   "version": "0.1.1"
 }
