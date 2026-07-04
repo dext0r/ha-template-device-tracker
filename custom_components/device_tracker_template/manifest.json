@@ -7,5 +7,5 @@
   "iot_class": "calculated",
   "issue_tracker": "https://github.com/dext0r/ha-template-device-tracker",
   "requirements": [],
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
